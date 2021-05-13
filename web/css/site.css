@@ -1,0 +1,230 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.page-header{
+  color:#848484;
+  font-weight: bolder;
+  border-bottom:1px solid #848484;
+}
+.well-disclaimer{
+  margin-top:80px;
+}
+.well-disclaimer h4,
+.well-read-doc h4{
+  text-align: center;
+  font-weight: 600;
+  padding-bottom:5px;
+  border-bottom:1px solid #000;
+}
+.site-login{
+    margin-top: 30px !important;
+}
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+.my-navbar{
+    background-color: #8bc34a !important;
+}
+.my-navbar .navbar-brand{
+    font-weight: bolder;
+    color:#fff !important;
+}
+.navbar-inverse .navbar-nav > li > a{
+    color:#f7f7f7 !important;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+    background-color: #6baf16 !important;
+}
+
+.timeline {
+    font-family: arial;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
+}
+.li {
+    transition: all 200ms ease-in;
+}
+.status {
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #848484;
+    position: relative;
+    transition: all 200ms ease-in;
+}
+.status h4 {
+  color:#848484;
+  font-weight: 500;
+  /* border:1px solid red; */
+  padding:5px;
+}
+.status h4.active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+  .status:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid #848484;
+    position: absolute;
+    top: -15px;
+    left: 42%;
+    transition: all 200ms ease-in;
+  }
+  .li a,
+  .li a:visited{
+    color:#000;
+    text-decoration:none;
+  }
+  .li a:hover{
+    text-decoration:none;
+  }
+  .li.complete .status {
+    border-top: 2px solid #8BC34A;
+  }
+  .li.complete .status:before {
+    background-color: #8BC34A;
+    border: none;
+    transition: all 200ms ease-in;
+  }
+  .li.complete .status h4 {
+    color: #8BC34A;
+  }
+  
+  @media (min-device-width: 320px) and (max-device-width: 700px) {
+    .timeline {
+      list-style-type: none;
+      display: block;
+    }
+  
+    .li {
+      transition: all 200ms ease-in;
+      display: flex;
+      width: inherit;
+    }
+  
+    .timestamp {
+      width: 100px;
+    }
+  
+    .status:before {
+      left: -8%;
+      top: 30%;
+      transition: all 200ms ease-in;
+    }
+  }

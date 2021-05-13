@@ -1,0 +1,111 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW, NOARCHIVE">
+<title>ResizeImage.net</title>
+<style type="text/css">
+html
+{
+/*	background:#306BE2;*/
+}
+
+body
+{
+	margin:0;
+	padding:0;
+	background:#333333;
+}
+#img_parent
+{
+	padding: 0;
+	margin: 30px auto 0 auto;
+	/*background-image:url(http://resizeimage.net/image/plaid2.png);
+	background-repeat:repeat;	*/
+	background:#333333;
+	border: 1px #333333 solid;
+}
+#buttons
+{
+	width:740px;
+	margin: 2px auto;
+	padding:0;
+	height: 40px;	
+}
+.button
+{
+	float:left;
+	margin: 0 2px 0 0;
+	padding: 0;	
+	width: 70px;
+	height: 35px;
+	border: 1px #000000 solid;
+	cursor:pointer;
+}
+.btn1
+{
+	background:#EC3627;
+}
+.btn2
+{
+	background:#FBFB6C;
+}
+.btn3
+{
+	background:#2ED045;
+}
+.btn4
+{
+	background:#2BC5E0;
+}
+.btn5
+{
+	background:#7911E8;
+}
+.btn6
+{
+	background:#E811E0;
+}
+.btn7
+{
+	background:#FFFFFF;
+}
+.btn8
+{
+	background:#333333;
+}
+.btn9
+{
+	background:#FD9F3A;
+}
+.btn10
+{
+	background:#306BE2;
+}
+</style>
+</head>
+<body>
+
+<img src="https://resizeimage.net/mypic/58n9mcWzz5wF2bbm/0HuW4/logo_rsud.jpg" border="0">
+<script type="text/javascript">
+function $get(id)
+{
+    return document.getElementById(id);
+}
+function SetImgPos( nWidthPic )
+{
+	var myElem = $get( "img_parent" );
+	if( myElem != null )
+		myElem.style.width = nWidthPic + "px";
+}
+function SwitchColor( strClolor )
+{
+	document.body.style.background = '#' + strClolor;
+	var myElem = $get( "img_parent" );
+	if( myElem != null )
+		myElem.style.background = '#' + strClolor;
+}
+SetImgPos( 250 );
+</script>
+</body>
+</html>
+
